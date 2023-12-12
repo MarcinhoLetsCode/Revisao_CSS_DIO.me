@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor ID</title>
+    <style>
+        *{
+            font-weight: bold;
+            background: white;
+        }
+        .seletor{
+            color: blue;
+        }
+        [title="Prime"]{
+            color: darkblue;
+            background: white;
+        }
+        [title]{
+            color: green;
+            background: red;
+        }
+        [title="NetFlix"]{
+            color: red;
+        }
+        [href]{
+            background: black;
+        }
+        [title="Prime"]{
+            background: white;
+        }
+        [title~="Streaming"]{
+            color: red;
+        }
+        [title|="SpotiFy"]{
+            color: black;
+        }
+        [href^="www."]{
+            font-size: 50px;
+        }
+        [href$=".com"]{
+            font-style: italic;
+        }
+        [id=dp]{
+            background: black;
+            color: white;
+        }
+        [href*="net"]{
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seletor Classe</h1>
+    <p>Welcome!</p>
+    <p>Seletor CSS</p>
+    <div>
+        <p>Hello! How Are You?</p>
+        <ul>
+            <li><b>Seletor De Atributo: </b> Busca Elementos Por Atributo</li>
+            <li>
+                <a title="Streaming NetFlix" href="www.netflix.com">NetFlix</a>
+            </li>
+            <li>
+                <a title="Prime" href="primevideo.com">Prime</a>
+            </li>
+            <li>
+                <a title="SpotiFy-Streaming">SpotiFy</a>
+            </li>
+            <li>
+                <a id="dp">DisneyPlus</a>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>
