@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor ID</title>
+    <style>
+        h1, p, div, #link-referencia{
+            color: red;
+        }
+        a, a:visited{
+            color: black;
+            text-decoration-style: dashed;
+        }
+        a:hover, [id^="botao"]:hover, h1:hover{
+            color: green;
+            background: red;
+        }
+        body p.texto{
+            color: purple;
+        }
+        body p.texto{
+            color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Agrupamento De Seletores</h1>
+    <p class="texto">
+        Podemos Aplicar As Mesmas Regras CSS Para Vários seletores Diferentes.
+        <br>
+        Para Isso, Podemos Separar Os Seletores Utilizando Uma Vírgula(,).
+    </p>
+    <p class="teste texto">TESTE</p>
+    <div class="texto">
+        Assim, Não Precisamos Ficar Copiando e Colando Os Mesmos Códigos Para Todos,
+        <br>
+        Nós Podemos Fazer Um Só Bloco De CSS e Reutilizar As Mesmas Regras!
+    </div>
+       
+    <br><br>
+    <a id="link-referencia" href="#">Clique Para Ver a Documentação</a>
+    <br><br>
+    <a id="link-suporte" href="#">Clique Para Entrar Em Contato</a>
+    <br><br>
+    <a id="botao-voltar" href="#">Voltar</a>
+    <br><br>
+    <button id="botao-fechar">Fechar Página</button>
+    
+</body>
+</html>
