@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador Descendente</title>
+    <style>
+        /*
+
+            1. Descendente (Espaço)
+            2. Filho (>)
+            3. Irmão Adjacente (+)
+            4. Irmão Em Geral (~)
+            
+            [SELETOR] [COMBINADOR] [SELETOR] 
+        
+        */
+
+        body > p {
+            background: gray;
+        }
+
+        div p {
+            color: green;
+        }
+
+        div > p{
+            background: red;
+        }
+
+        .fundo-azul > p{
+            background: lightblue;
+        }
+
+        span > p{
+            background: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Combinador Filho</h1>
+
+   <div class="fundo-verde">
+        <p>Parágrafo 1 Dentro Da div</p>
+        <p>Parágrafo 2 Dentro Da div</p>
+        <span>
+            <p>Parágrafo 3 Dentro Da div, Dentro Do span</p>
+        </span>
+   </div>
+
+   <p>Parágrafo 4, Fora Da div</p>
+   <p>Parágrafo 5, Fora Da div</p>
+
+   <div class="fundo-azul">
+        <p>Parágrafo 6 Dentro Da div</p>
+        <p>Parágrafo 7 Dentro Da div</p>
+        <span>
+            <p>Parágrafo 8 Dentro Da div, Dentro Do span</p>
+        </span>
+    </div>
+</body>
+</html>
