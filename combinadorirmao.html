@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador Descendente</title>
+    <style>
+        /*
+
+            1. Descendente (Espaço)
+            2. Filho (>)
+            3. Irmão Adjacente (+)
+            4. Irmão Em Geral (~)
+            
+            [SELETOR] [COMBINADOR] [SELETOR] 
+        
+        */
+
+        /* Adjacente (Vem Logo Em Seguida) */
+
+        body + div{
+            background: gray;
+        }
+
+        div + p{
+            color: red;
+        }
+
+        div + span{
+            color: red;
+        }
+
+        .fundo-verde + p{
+            background: lightgreen;
+        }
+
+        /* Geral (Todos Irmãos) */
+
+        div ~ p{
+            background: tomato;
+        }
+
+        .fundo-azul ~ p{
+            color: lightblue;
+        }
+
+        div ~ div{
+            background: lightslategray;
+        }
+
+        /* Combinador + Seletor */
+        .fundo-red {
+            background: ;
+        }
+
+        .fundo-red span p {
+            background: yellow;
+        }
+
+        .fundo-red span ~ p {
+            background: black;
+        }
+
+        .fundo-red span + p {
+            background: blue;
+        }
+
+        .fundo-red p + p {
+            background: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Combinador Filho</h1>
+
+   <div class="fundo-verde">
+        <p>Parágrafo 1 Dentro Da div</p>
+        <p>Parágrafo 2 Dentro Da div</p>
+        <span>
+            <p>Parágrafo 3 Dentro Da div, Dentro Do span</p>
+        </span>
+   </div>
+
+   <p>Parágrafo 4, Fora Da div</p>
+   <span>TESTE</span>
+   <p>Parágrafo 5, Fora Da div</p>
+
+   <div class="fundo-verde">
+        <p>Parágrafo 6 Dentro Da div</p>
+        <p>Parágrafo 7 Dentro Da div</p>
+        <span>
+            <p>Parágrafo 8 Dentro Da div, Dentro Do span</p>
+        </span>
+    </div>
+
+    <p>Parágrafo 9, Fora Da div</p>
+
+    <div class="fundo-azul">TESTE</div>
+    
+    <p>Parágrafo 10, Fora Da div</p>
+
+    <span>
+        <div class="fundo-red">
+            <p>Elemento 1</p>
+            <p>Elemento 2</p>
+            <span>
+                <p>Elemento 3</p>
+                <p>Elemento 4</p>
+            </span>
+            <p>Elemento 5</p>
+            <p>Elemento 6</p>
+        </div>
+    </span>
+</body>
+</html>
