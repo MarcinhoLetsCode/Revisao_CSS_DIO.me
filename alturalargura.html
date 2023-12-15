@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largura e Altura</title>
+    <style>
+        div{
+            background: lightblue;
+            width: 200px;
+            height: auto;
+        }
+
+        #div-01{
+            background: lightgreen;
+            height: 200px;
+            width: initial;
+        }
+
+        #div-02{
+            background: lightpink;
+            height: inherit;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>Trilha De CSS</div>
+    
+    <div id="div-01">
+        Sou Div 1
+        <div id="div-02">
+            Sou Div 2
+        </div>
+    </div>  
+</body>
+</html>
