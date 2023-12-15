@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <style>
+        /*
+            Espaçamento Por Fora Dos Elementos!
+            Um Valor: Aplica Nos 4 Lados;
+            Dois Valores: Em Cima e Embaixo;
+            Três Valores: Em Cima, Lados e Embaixo;
+            Quatro: Cima, Direita, Baixo, Esquerda 
+
+            margin-top
+            margin-bottom
+            margin-left
+            margin-right
+        */
+        div{
+            height: 200px;
+            width: 200px;
+        }
+        #elemento-01{
+            /*display: inline-block;*/
+            background: orange;
+            margin: 50px;
+        }
+        #elemento-02{
+            /*display: inline-block;*/
+            background: purple;
+            margin-top: auto;
+            margin-left: inherit;
+            margin-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="elemento-01"></div>
+    <div id="elemento-02"></div>    
+</body>
+</html>
